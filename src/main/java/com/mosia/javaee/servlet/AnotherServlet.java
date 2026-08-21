@@ -22,7 +22,7 @@ public class AnotherServlet extends HttpServlet {
     private NumberGenerator numberGenerator;
 
     public void init() {
-        message = "Hello World!";
+        message = "Another Servlet!";
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {

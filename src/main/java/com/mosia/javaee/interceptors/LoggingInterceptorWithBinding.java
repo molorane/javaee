@@ -1,5 +1,6 @@
 package com.mosia.javaee.interceptors;
 
+import jakarta.annotation.Priority;
 import jakarta.inject.Inject;
 import jakarta.interceptor.AroundConstruct;
 import jakarta.interceptor.AroundInvoke;
@@ -9,6 +10,7 @@ import org.slf4j.Logger;
 
 @Interceptor
 @Loggable
+@Priority(Interceptor.Priority.APPLICATION)
 public class LoggingInterceptorWithBinding {
 
     @Inject

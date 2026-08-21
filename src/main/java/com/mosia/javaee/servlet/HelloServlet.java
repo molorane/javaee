@@ -18,7 +18,7 @@ public class HelloServlet extends HttpServlet {
     private NumberGenerator numberGenerator;
 
     public void init() {
-        message = "Hello World!";
+        message = "Hello Servlet!";
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
