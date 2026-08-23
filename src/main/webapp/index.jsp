@@ -1,14 +1,6 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jakarta EE Demo App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between font-sans">
+<% request.setAttribute("activeMenu", "home"); %>
+<%@ include file="includes/header.jsp" %>
+
     <div class="max-w-4xl mx-auto w-full px-6 py-12 space-y-12">
         <!-- Hero Header -->
         <header class="text-center space-y-4">
@@ -70,8 +62,4 @@
         </main>
     </div>
 
-    <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-        Jakarta EE Servlet &amp; CDI Application
-    </footer>
-</body>
-</html>
+<%@ include file="includes/footer.jsp" %>

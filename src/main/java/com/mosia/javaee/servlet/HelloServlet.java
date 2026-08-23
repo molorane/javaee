@@ -25,6 +25,7 @@ public class HelloServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         request.setAttribute("message", message);
         request.setAttribute("number", numberGenerator.generateNumber());
+        request.setAttribute("activeMenu", "hello");
         request.getRequestDispatcher("/hello.jsp").forward(request, response);
     }
 
