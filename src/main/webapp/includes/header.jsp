@@ -12,12 +12,12 @@
     <!-- Common Header / Navigation Bar -->
     <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
         <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="${pageContext.request.contextPath}/index.jsp" class="flex items-center gap-2 font-bold text-white text-lg tracking-tight hover:opacity-90 transition-opacity">
+            <a href="${pageContext.request.contextPath}" class="flex items-center gap-2 font-bold text-white text-lg tracking-tight hover:opacity-90 transition-opacity">
                 <span class="w-3 h-3 rounded-full bg-indigo-500 badge-glow-indigo"></span>
                 Jakarta EE Demo
             </a>
             <nav class="flex items-center gap-1.5 sm:gap-3 text-sm font-medium">
-                <a href="${pageContext.request.contextPath}/index.jsp" 
+                <a href="${pageContext.request.contextPath}"
                    class="px-3 py-1.5 rounded-lg transition-all ${activeMenu == 'home' ? 'bg-indigo-600/30 text-white font-semibold border border-indigo-500/40 shadow-sm' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'}">
                     Home
                 </a>

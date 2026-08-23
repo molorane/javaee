@@ -20,7 +20,7 @@
             </div>
 
             <div class="pt-2 flex flex-col gap-3 text-center">
-                <a href="index.jsp" class="btn-transition w-full inline-flex justify-center items-center px-4 py-2.5 rounded-lg text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-600/20">
+                <a href="" class="btn-transition w-full inline-flex justify-center items-center px-4 py-2.5 rounded-lg text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-600/20">
                     Back to Home
                 </a>
                 <a href="another-servlet" class="btn-transition w-full inline-flex justify-center items-center px-4 py-2.5 rounded-lg text-sm font-medium text-slate-300 bg-slate-700/50 hover:bg-slate-700 transition-colors border border-slate-600/50">
