@@ -4,13 +4,13 @@ import com.mosia.javaee.qualifier.EightDigits;
 import com.mosia.javaee.qualifier.ThirteenDigits;
 import com.mosia.javaee.service.NumberGenerator;
 import jakarta.inject.Inject;
+import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @WebServlet(name = "anotherServlet", value = "/another-servlet")
 public class AnotherServlet extends HttpServlet {
@@ -25,15 +25,10 @@ public class AnotherServlet extends HttpServlet {
         message = "Another Servlet!";
     }
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
-
-        // Hello
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
-        out.println("<h2>" + numberGenerator.generateNumber() + "</h2>");
-        out.println("</body></html>");
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        request.setAttribute("message", message);
+        request.setAttribute("number", numberGenerator.generateNumber());
+        request.getRequestDispatcher("/another.jsp").forward(request, response);
     }
 
     public void destroy() {
