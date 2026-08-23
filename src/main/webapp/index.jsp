@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jakarta EE Demo App</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between font-sans">
     <div class="max-w-4xl mx-auto w-full px-6 py-12 space-y-12">
         <!-- Hero Header -->
         <header class="text-center space-y-4">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-950/80 border border-indigo-500/30 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-950/80 border border-indigo-500/30 text-indigo-400 text-xs font-semibold uppercase tracking-wider badge-glow-indigo">
                 <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
                 Jakarta EE &amp; CDI Demo
             </div>
@@ -26,7 +27,7 @@
         <!-- Feature Cards Grid -->
         <main class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Hello Servlet Card -->
-            <a href="hello-servlet" class="group block bg-slate-800/80 hover:bg-slate-800 rounded-2xl p-6 border border-slate-700/80 hover:border-indigo-500/50 transition-all duration-200 shadow-xl hover:shadow-indigo-500/10">
+            <a href="hello-servlet" class="group block glass-card btn-transition rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-200 shadow-xl hover:shadow-indigo-500/10">
                 <div class="flex items-center justify-between mb-4">
                     <span class="px-3 py-1 text-xs font-medium text-indigo-300 bg-indigo-900/50 rounded-md border border-indigo-700/40">
                         @ThirteenDigits
@@ -47,7 +48,7 @@
             </a>
 
             <!-- Another Servlet Card -->
-            <a href="another-servlet" class="group block bg-slate-800/80 hover:bg-slate-800 rounded-2xl p-6 border border-slate-700/80 hover:border-purple-500/50 transition-all duration-200 shadow-xl hover:shadow-purple-500/10">
+            <a href="another-servlet" class="group block glass-card btn-transition rounded-2xl p-6 hover:border-purple-500/50 transition-all duration-200 shadow-xl hover:shadow-purple-500/10">
                 <div class="flex items-center justify-between mb-4">
                     <span class="px-3 py-1 text-xs font-medium text-purple-300 bg-purple-900/50 rounded-md border border-purple-700/40">
                         @EightDigits + Decorator
